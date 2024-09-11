@@ -69,6 +69,7 @@ jobs:
         modules: ${{ fromJSON(inputs.modules) }}
     env:
       MIRYOKU_DEBUG: ${{ secrets.MIRYOKU_DEBUG }}
+      CONFIG_ZMK_BLE_EXPERIMENTAL_CONN: y
     steps:
       - name: checkout
         uses: actions/checkout@v4
